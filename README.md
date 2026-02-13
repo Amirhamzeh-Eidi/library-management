@@ -16,7 +16,7 @@ You can manage books, members, and borrowing operations directly from the termin
 
 ## Installation
 ```bash
-git clone <https://github.com/Amirhamzeh-Eidi/library-management.git>
+git clone https://github.com/Amirhamzeh-Eidi/library-management.git
 cd library-management
 python main.py
 ```
