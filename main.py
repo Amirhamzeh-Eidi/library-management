@@ -50,8 +50,8 @@ while True:
                     print('book deleted.')
             elif choice == '4': #‌ show all books
                 result = library.show_books()
-                if x:
-                    for book in x:
+                if result:
+                    for book in result:
                         print(book)
                 else:
                     print('book list is empty.')
@@ -96,8 +96,8 @@ while True:
                     print('member deleted')
             elif choice == '4':  # show members
                 result = library.show_members()
-                if x:
-                    for member in x:
+                if result:
+                    for member in result:
                         print(member)
                 else:
                     print('member list is empty.')
@@ -134,15 +134,15 @@ while True:
                     print(f'Done. your books:{borrowed_books}')
             elif choice == '3': # show borrowed books
                 result = library.show_borrowed_books()
-                if x:
-                    for book in x:
+                if result:
+                    for book in result:
                         print(book)
                 else:
                     print('borrowed list is empty')
             elif choice == '4': # show available books
                 result = library.show_available_books()
-                if x:
-                    for book in x:
+                if result:
+                    for book in result:
                         print(book)
                 else:
                     print('available list is empty')
@@ -164,8 +164,8 @@ while True:
             elif choice == '2': # search a book by ID
                 book_id = input('Enter book ID: ')
                 result = library.search_book_id(book_id)
-                if x:
-                    print(x)
+                if result:
+                    print(result)
                 else:
                     print('Sorry, book not found, your ID is wrong.')
             elif choice == '3': # search a member by name
@@ -179,8 +179,8 @@ while True:
             elif choice == '4': # search a member by ID
                 member_id = input('Enter member ID: ')
                 result = library.search_member_id(member_id)
-                if x:
-                    print(x)
+                if result:
+                    print(result)
                 else:
                     print('Sorry, member not found, your ID is wrong.')
             elif choice == '0': # exit
@@ -195,8 +195,8 @@ while True:
                 print('Done!')
             elif choice == '2':
                 result = show_history()
-                if x:
-                    print(x)
+                if result:
+                    print(result)
                 else:
                     print('history is empty.')
             elif choice == '0':
